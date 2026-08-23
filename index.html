@@ -99,6 +99,28 @@
             text-decoration: underline;
         }
 
+        .page-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .page-links a {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .page-links a:hover {
+            background: #e9eaec;
+            text-decoration: none;
+        }
+
         @media (max-width: 600px) {
             .container {
                 margin: 0;
@@ -113,6 +135,15 @@
             h2 {
                 font-size: 20px;
                 margin-top: 32px;
+            }
+
+            .page-links {
+                flex-direction: column;
+            }
+
+            .page-links a {
+                width: 100%;
+                text-align: center;
             }
         }
     </style>
@@ -345,13 +376,19 @@
 
         <p>
             <strong>이메일:</strong>
-            hsgdf123@gmail.com
+            <a href="mailto:hsgdf123@gmail.com">hsgdf123@gmail.com</a>
         </p>
 
         <p>
             <strong>문의 방법:</strong>
             이메일을 통해 문의 주시면 신속하게 답변드리겠습니다.
         </p>
+    </div>
+
+
+    <div class="page-links">
+        <a href="./contact.html">문의하기</a>
+        <a href="./data-deletion.html">데이터 삭제 요청</a>
     </div>
 
 
